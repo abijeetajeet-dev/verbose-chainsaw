@@ -1,0 +1,263 @@
+{
+  "total_capital": 250,
+  "currency": "EUR",
+  "strategy_name": "Aggressive Growth with Balanced Risk",
+  "investment_horizon": "3-5 years",
+  "target_return": "20-25% CAGR",
+  "allocation_breakdown": {
+    "indian_stocks": {
+      "percentage": 45,
+      "amount_eur": 112.5,
+      "rationale": "Direct stock picking for highest growth potential, focus on AI/tech, healthcare, banking"
+    },
+    "mutual_funds": {
+      "percentage": 35,
+      "amount_eur": 87.5,
+      "rationale": "Professional management, diversification, SIP benefits, reduced volatility"
+    },
+    "cryptocurrency": {
+      "percentage": 20,
+      "amount_eur": 50,
+      "rationale": "High growth potential, portfolio diversification, institutional adoption trend"
+    }
+  },
+  "stock_investments": [
+    {
+      "company": "Tata Consultancy Services (TCS)",
+      "sector": "Technology/AI",
+      "allocation_eur": 18,
+      "allocation_inr": 1620,
+      "shares": 0.39,
+      "investment_horizon": "3-5 years",
+      "expected_return": "15-20% CAGR",
+      "risk_level": "Medium",
+      "rationale": "AI leader, strong fundamentals, consistent performer"
+    },
+    {
+      "company": "Apollo Hospitals",
+      "sector": "Healthcare",
+      "allocation_eur": 15,
+      "allocation_inr": 1350,
+      "shares": 0.17,
+      "investment_horizon": "3-5 years",
+      "expected_return": "18-22% CAGR",
+      "risk_level": "Medium",
+      "rationale": "Healthcare expansion story, aging demographics"
+    },
+    {
+      "company": "HDFC Bank",
+      "sector": "Banking",
+      "allocation_eur": 15,
+      "allocation_inr": 1350,
+      "shares": 1.42,
+      "investment_horizon": "3-5 years",
+      "expected_return": "12-15% CAGR",
+      "risk_level": "Low-Medium",
+      "rationale": "Defensive anchor, best-in-class private bank"
+    },
+    {
+      "company": "Infosys Ltd",
+      "sector": "Technology/AI",
+      "allocation_eur": 12,
+      "allocation_inr": 1080,
+      "shares": 0.58,
+      "investment_horizon": "2-3 years",
+      "expected_return": "12-18% CAGR",
+      "risk_level": "Medium",
+      "rationale": "AI platform Nia, digital transformation leader"
+    },
+    {
+      "company": "Tata Power",
+      "sector": "Renewable Energy",
+      "allocation_eur": 12,
+      "allocation_inr": 1080,
+      "shares": 2.76,
+      "investment_horizon": "3-5 years",
+      "expected_return": "20-25% CAGR",
+      "risk_level": "Medium-High",
+      "rationale": "Green energy transition, solar/EV charging"
+    },
+    {
+      "company": "Sun Pharmaceutical",
+      "sector": "Pharmaceuticals",
+      "allocation_eur": 10,
+      "allocation_inr": 900,
+      "shares": 0.56,
+      "investment_horizon": "2-4 years",
+      "expected_return": "12-16% CAGR",
+      "risk_level": "Medium",
+      "rationale": "Largest pharma company, global presence"
+    },
+    {
+      "company": "Axis Bank",
+      "sector": "Banking",
+      "allocation_eur": 10,
+      "allocation_inr": 900,
+      "shares": 0.8,
+      "investment_horizon": "2-3 years",
+      "expected_return": "18-22% CAGR",
+      "risk_level": "Medium-High",
+      "rationale": "Turnaround story, improving asset quality"
+    },
+    {
+      "company": "Hindustan Unilever",
+      "sector": "FMCG",
+      "allocation_eur": 10,
+      "allocation_inr": 900,
+      "shares": 0.34,
+      "investment_horizon": "3-5 years",
+      "expected_return": "10-12% CAGR",
+      "risk_level": "Low",
+      "rationale": "Defensive play, consistent dividend, rural recovery"
+    },
+    {
+      "company": "JSW Energy",
+      "sector": "Renewable Energy",
+      "allocation_eur": 10.5,
+      "allocation_inr": 945,
+      "shares": 1.76,
+      "investment_horizon": "3-5 years",
+      "expected_return": "25-30% CAGR",
+      "risk_level": "High",
+      "rationale": "Exceptional 5yr CAGR 54.96%, green transition"
+    }
+  ],
+  "mutual_fund_investments": [
+    {
+      "fund_name": "JioBlackRock Flexi Cap Fund",
+      "allocation_eur": 50,
+      "allocation_inr": 4500,
+      "sip_monthly": true,
+      "monthly_amount_eur": 25,
+      "monthly_amount_inr": 2250,
+      "investment_horizon": "5+ years",
+      "expected_return": "12-15% CAGR",
+      "risk_level": "High",
+      "rationale": "AI-driven stock selection, flexi-cap mandate, BlackRock expertise"
+    },
+    {
+      "fund_name": "Axis Bluechip Fund",
+      "allocation_eur": 25,
+      "allocation_inr": 2250,
+      "sip_monthly": true,
+      "monthly_amount_eur": 12.5,
+      "monthly_amount_inr": 1125,
+      "investment_horizon": "5+ years",
+      "expected_return": "10-14% CAGR",
+      "risk_level": "Medium",
+      "rationale": "Large-cap stability, proven track record, good fund manager"
+    },
+    {
+      "fund_name": "Mirae Asset Emerging Bluechip Fund",
+      "allocation_eur": 12.5,
+      "allocation_inr": 1125,
+      "sip_monthly": true,
+      "monthly_amount_eur": 6.25,
+      "monthly_amount_inr": 562.5,
+      "investment_horizon": "5+ years",
+      "expected_return": "15-18% CAGR",
+      "risk_level": "High",
+      "rationale": "Mid-cap growth potential, strong performance history"
+    }
+  ],
+  "crypto_investments": [
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "allocation_eur": 25,
+      "allocation_percentage": 50,
+      "investment_strategy": "Dollar Cost Averaging",
+      "purchase_frequency": "Weekly",
+      "weekly_amount_eur": 6.25,
+      "investment_horizon": "3-5 years",
+      "expected_return": "15-25% CAGR",
+      "risk_level": "High",
+      "rationale": "Digital gold, institutional adoption, ETF inflows"
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "allocation_eur": 15,
+      "allocation_percentage": 30,
+      "investment_strategy": "Dollar Cost Averaging",
+      "purchase_frequency": "Bi-weekly",
+      "biweekly_amount_eur": 7.5,
+      "investment_horizon": "3-5 years",
+      "expected_return": "18-30% CAGR",
+      "risk_level": "High",
+      "rationale": "Smart contract platform, DeFi ecosystem, staking rewards"
+    },
+    {
+      "symbol": "SOL",
+      "name": "Solana",
+      "allocation_eur": 10,
+      "allocation_percentage": 20,
+      "investment_strategy": "Lump Sum + DCA",
+      "initial_investment_eur": 5,
+      "monthly_dca_eur": 2.5,
+      "investment_horizon": "2-4 years",
+      "expected_return": "20-40% CAGR",
+      "risk_level": "Very High",
+      "rationale": "High-performance blockchain, memecoin activity, ecosystem growth"
+    }
+  ],
+  "implementation_schedule": {
+    "immediate_actions": [
+      "Start JioBlackRock SIP (25 EUR/month)",
+      "Begin Bitcoin weekly DCA (6.25 EUR/week)",
+      "Purchase initial SOL position (5 EUR)"
+    ],
+    "month_1": [
+      "Invest in TCS (18 EUR)",
+      "Invest in Apollo Hospitals (15 EUR)",
+      "Invest in HDFC Bank (15 EUR)",
+      "Start Axis Bluechip SIP (12.50 EUR/month)"
+    ],
+    "month_2": [
+      "Invest in Infosys (12 EUR)",
+      "Invest in Tata Power (12 EUR)",
+      "Start Ethereum bi-weekly DCA (7.50 EUR)",
+      "Start Mirae Asset SIP (6.25 EUR/month)"
+    ],
+    "month_3": [
+      "Invest in Sun Pharma (10 EUR)",
+      "Invest in Axis Bank (10 EUR)",
+      "Invest in HUL (10 EUR)",
+      "Complete JSW Energy investment (10.50 EUR)"
+    ]
+  },
+  "risk_management": {
+    "position_limits": {
+      "max_single_stock": "7.5% of total portfolio",
+      "max_sector_exposure": "25% of total portfolio",
+      "max_crypto_exposure": "20% of total portfolio"
+    },
+    "stop_loss_strategy": {
+      "individual_stocks": "15% trailing stop loss",
+      "crypto_positions": "20% stop loss (more volatile)",
+      "mutual_funds": "Hold through cycles, no stop loss"
+    },
+    "rebalancing": {
+      "frequency": "Quarterly",
+      "trigger": "5% deviation from target allocation",
+      "method": "Sell overweight, buy underweight"
+    }
+  },
+  "portfolio_projections": {
+    "conservative_scenario": {
+      "annual_return": "12%",
+      "portfolio_value_3_years": 351,
+      "portfolio_value_5_years": 441
+    },
+    "base_case_scenario": {
+      "annual_return": "18%",
+      "portfolio_value_3_years": 414,
+      "portfolio_value_5_years": 572
+    },
+    "optimistic_scenario": {
+      "annual_return": "25%",
+      "portfolio_value_3_years": 488,
+      "portfolio_value_5_years": 763
+    }
+  }
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Strategy Dashboard - 250 EUR Allocation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__title">
+                    <h1>Investment Strategy Dashboard</h1>
+                    <div class="strategy-badge">
+                        <span class="status-dot status-dot--active"></span>
+                        Aggressive Growth Strategy
+                    </div>
+                </div>
+                <div class="header__stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Total Capital</span>
+                        <span class="stat-value">€250.00</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Expected CAGR</span>
+                        <span class="stat-value">16-22%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Time Horizon</span>
+                        <span class="stat-value">3-5 Years</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Portfolio Overview Section -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Portfolio Overview</h2>
+                    <div class="risk-indicator">
+                        <span class="status-dot status-dot--medium-high"></span>
+                        Medium-High Risk
+                    </div>
+                </div>
+                <div class="portfolio-overview">
+                    <div class="overview-stats">
+                        <div class="stat-card">
+                            <h3>Total Investment</h3>
+                            <div class="stat-main">€250.00</div>
+                            <div class="stat-small">100% Allocated</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Expected 5Y Value</h3>
+                            <div class="stat-main">€572</div>
+                            <div class="stat-change positive">Base Case Scenario</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Asset Classes</h3>
+                            <div class="stat-main">3</div>
+                            <div class="stat-small">Diversified Portfolio</div>
+                        </div>
+                    </div>
+                    <div class="allocation-chart">
+                        <h3>Asset Allocation</h3>
+                        <div class="chart-container" style="position: relative; height: 250px;">
+                            <canvas id="allocation-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Asset Allocation Breakdown -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Asset Allocation Breakdown</h2>
+                </div>
+                <div class="allocation-breakdown">
+                    <div class="allocation-card">
+                        <div class="allocation-header">
+                            <div class="allocation-title">
+                                <h3>Indian Stocks</h3>
+                                <div class="risk-badge risk-badge--medium-high">Medium-High Risk</div>
+                            </div>
+                            <div class="allocation-amount">
+                                <span class="amount">€112.50</span>
+                                <span class="percentage">45%</span>
+                            </div>
+                        </div>
+                        <div class="allocation-details">
+                            <div class="detail-item">
+                                <span class="label">Expected Return</span>
+                                <span class="value">15-20%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Number of Stocks</span>
+                                <span class="value">9 Companies</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Sectors</span>
+                                <span class="value">Technology, Healthcare, Banking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="allocation-card">
+                        <div class="allocation-header">
+                            <div class="allocation-title">
+                                <h3>Mutual Funds</h3>
+                                <div class="risk-badge risk-badge--medium">Medium Risk</div>
+                            </div>
+                            <div class="allocation-amount">
+                                <span class="amount">€87.50</span>
+                                <span class="percentage">35%</span>
+                            </div>
+                        </div>
+                        <div class="allocation-details">
+                            <div class="detail-item">
+                                <span class="label">Expected Return</span>
+                                <span class="value">12-15%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">SIP Strategy</span>
+                                <span class="value">3 Funds</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Management</span>
+                                <span class="value">Professional</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="allocation-card">
+                        <div class="allocation-header">
+                            <div class="allocation-title">
+                                <h3>Cryptocurrency</h3>
+                                <div class="risk-badge risk-badge--high">High Risk</div>
+                            </div>
+                            <div class="allocation-amount">
+                                <span class="amount">€50.00</span>
+                                <span class="percentage">20%</span>
+                            </div>
+                        </div>
+                        <div class="allocation-details">
+                            <div class="detail-item">
+                                <span class="label">Expected Return</span>
+                                <span class="value">20-30%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">DCA Strategy</span>
+                                <span class="value">3 Cryptos</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Potential</span>
+                                <span class="value">High Growth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detailed Stock Positions -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Stock Portfolio Details</h2>
+                    <div class="stocks-summary">€112.50 across 9 stocks</div>
+                </div>
+                <div class="stocks-grid" id="stocks-grid">
+                    <!-- Stock cards will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Mutual Fund Strategy -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Mutual Fund SIP Strategy</h2>
+                    <div class="sip-badge">Monthly SIP Approach</div>
+                </div>
+                <div class="mutual-funds-container" id="mutual-funds-container">
+                    <!-- Mutual fund cards will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Cryptocurrency Strategy -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Cryptocurrency DCA Strategy</h2>
+                    <div class="crypto-badge">Dollar Cost Averaging</div>
+                </div>
+                <div class="crypto-strategy" id="crypto-strategy">
+                    <!-- Crypto cards will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Implementation Timeline -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>3-Month Implementation Timeline</h2>
+                    <div class="timeline-badge">Phased Approach</div>
+                </div>
+                <div class="implementation-timeline" id="implementation-timeline">
+                    <!-- Timeline items will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Growth Projections -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>5-Year Growth Projections</h2>
+                    <div class="scenarios-badge">3 Scenarios</div>
+                </div>
+                <div class="projections-container">
+                    <div class="projection-chart">
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="growth-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="scenario-cards">
+                        <div class="scenario-card">
+                            <h4>Conservative (12% CAGR)</h4>
+                            <div class="scenario-value">€441</div>
+                            <div class="scenario-gain">+76% Total Return</div>
+                        </div>
+                        <div class="scenario-card scenario-card--highlighted">
+                            <h4>Base Case (18% CAGR)</h4>
+                            <div class="scenario-value">€572</div>
+                            <div class="scenario-gain">+129% Total Return</div>
+                        </div>
+                        <div class="scenario-card">
+                            <h4>Optimistic (25% CAGR)</h4>
+                            <div class="scenario-value">€763</div>
+                            <div class="scenario-gain">+205% Total Return</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Risk Management Framework -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Risk Management Framework</h2>
+                </div>
+                <div class="risk-management-grid">
+                    <div class="risk-card">
+                        <h3>Position Limits</h3>
+                        <div class="risk-list">
+                            <div class="risk-item">
+                                <span>Max Single Stock</span>
+                                <span class="risk-value">7.2% (€18)</span>
+                            </div>
+                            <div class="risk-item">
+                                <span>Max Sector</span>
+                                <span class="risk-value">25%</span>
+                            </div>
+                            <div class="risk-item">
+                                <span>Crypto Allocation</span>
+                                <span class="risk-value">20% Maximum</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="risk-card">
+                        <h3>Stop Loss Strategy</h3>
+                        <div class="risk-list">
+                            <div class="risk-item">
+                                <span>Individual Stocks</span>
+                                <span class="risk-value">-15%</span>
+                            </div>
+                            <div class="risk-item">
+                                <span>Crypto Positions</span>
+                                <span class="risk-value">-25%</span>
+                            </div>
+                            <div class="risk-item">
+                                <span>Portfolio Total</span>
+                                <span class="risk-value">-12%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="risk-card">
+                        <h3>Rebalancing Rules</h3>
+                        <div class="risk-list">
+                            <div class="risk-item">
+                                <span>Frequency</span>
+                                <span class="risk-value">Quarterly</span>
+                            </div>
+                            <div class="risk-item">
+                                <span>Trigger</span>
+                                <span class="risk-value">±5% Deviation</span>
+                            </div>
+                            <div class="risk-item">
+                                <span>Review Date</span>
+                                <span class="risk-value">Each Quarter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

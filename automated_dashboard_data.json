@@ -1,0 +1,137 @@
+{
+  "dashboard_metadata": {
+    "last_updated": "2025-10-02 07:14:48 IST",
+    "next_update": "2025-10-02 07:19:48 IST",
+    "market_status": "CLOSED",
+    "automation_status": "LIVE",
+    "data_sources": [
+      "NSE Real-time API",
+      "BSE API",
+      "CoinGecko",
+      "JioBlackRock NAV"
+    ],
+    "update_frequency": "Every 5 minutes during market hours, Every 1 hour after hours"
+  },
+  "portfolio_summary": {
+    "total_invested_eur": 300,
+    "current_value_eur": 314.5,
+    "total_return_eur": 14.5,
+    "total_return_percent": 4.83,
+    "day_change_eur": 2.3,
+    "day_change_percent": 0.74,
+    "unrealized_pnl": 14.5,
+    "realized_pnl": 0.0
+  },
+  "live_stock_positions": [
+    {
+      "company": "Tata Consultancy Services",
+      "symbol": "TCS",
+      "invested_eur": 20,
+      "invested_inr": 1800,
+      "shares": 0.43,
+      "current_price_inr": 4141.3,
+      "previous_close": 4150,
+      "day_change": -8.699999999999818,
+      "day_change_percent": -0.21,
+      "current_value_eur": 19.79,
+      "unrealized_pnl_eur": -0.21,
+      "last_updated": "07:14:48",
+      "technical_signals": {
+        "rsi": 49.8,
+        "macd": "BULLISH",
+        "moving_avg": "ABOVE",
+        "signal": "HOLD"
+      },
+      "alerts": []
+    },
+    {
+      "company": "Infosys Ltd",
+      "symbol": "INFY",
+      "invested_eur": 15,
+      "invested_inr": 1350,
+      "shares": 0.73,
+      "current_price_inr": 1841.83,
+      "previous_close": 1850,
+      "day_change": -8.170000000000073,
+      "day_change_percent": -0.44,
+      "current_value_eur": 14.94,
+      "unrealized_pnl_eur": -0.06,
+      "last_updated": "07:14:48",
+      "technical_signals": {
+        "rsi": 64.2,
+        "macd": "BEARISH",
+        "moving_avg": "BELOW",
+        "signal": "BUY"
+      },
+      "alerts": []
+    }
+  ],
+  "crypto_positions": [
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "current_price_usd": 68620.78,
+      "day_change_percent": 1.22,
+      "technical_signals": {
+        "rsi": 62.2,
+        "macd": "BULLISH",
+        "trend": "UPTREND",
+        "signal": "BUY"
+      },
+      "last_updated": "07:14:48"
+    }
+  ],
+  "mutual_fund_tracking": {
+    "jioblackrock_flexi_cap": {
+      "fund_name": "JioBlackRock Flexi Cap Fund",
+      "sip_amount_eur": 100,
+      "sip_amount_inr": 9000,
+      "current_nav": 10.0396,
+      "nav_change": 0.0349,
+      "nav_change_percent": -0.31,
+      "units_allotted": 895.9899,
+      "current_value_inr": 8995.38,
+      "last_nav_date": "2025-10-02",
+      "next_sip_date": "2025-10-30",
+      "automation_status": "ACTIVE"
+    }
+  },
+  "automated_alerts": [
+    {
+      "type": "PRICE_ALERT",
+      "message": "TCS approaching resistance at \u20b94,200",
+      "severity": "INFO",
+      "timestamp": "07:14:48",
+      "action_required": false
+    },
+    {
+      "type": "TECHNICAL_SIGNAL",
+      "message": "BTC RSI entered oversold zone (<30)",
+      "severity": "WARNING",
+      "timestamp": "07:04:48",
+      "action_required": true
+    }
+  ],
+  "automation_config": {
+    "data_refresh_intervals": {
+      "stocks_intraday": "5 minutes",
+      "crypto_realtime": "1 minute",
+      "mutual_fund_nav": "Daily at 8 PM IST",
+      "technical_indicators": "15 minutes",
+      "portfolio_calculation": "Real-time"
+    },
+    "alert_triggers": {
+      "price_change": "\u00b13%",
+      "rsi_overbought": ">70",
+      "rsi_oversold": "<30",
+      "stop_loss": "-15%",
+      "profit_target": "+25%"
+    },
+    "api_status": {
+      "nse_api": "CONNECTED",
+      "crypto_api": "CONNECTED",
+      "nav_scraper": "ACTIVE",
+      "last_health_check": "07:14:48"
+    }
+  }
+}
